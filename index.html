@@ -9,14 +9,54 @@
 <body>
     
 
+    <h1 class="saludo">Hola</h1>
+    <p id="parrafo">Saludos</p>
+    <div>O,o</div>
     <script
 			  src="https://code.jquery.com/jquery-3.4.1.min.js"
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
               crossorigin="anonymous"></script>
               
     <script>
+
+        //ITERAR ELEMENTOS CON EACH Y FOR TRADICIONAL
         $(document).ready(function () {
             
+            var numbers = [1,2,3,44,5,3,35,65];
+            // $.each(numbers, function (i, value) { 
+            //      console.log(i+":"+value);
+            // });
+            console.log("Tamano del arreglo:" +numbers.length);
+            for(var i = 0; i<numbers.length; i++){
+                //console.log(numbers[i]);
+            }
+
+
+        });
+
+
+        //ITERAR ELEMENTOS CON FOR
+        $(document).ready(function () {
+            var colors = [{
+                "colors": [{
+                    "colorName": "red",
+                    "hexValue" : "#f00"
+                },
+                {
+                    "colorName": "blue",
+                    "hexValue" : "#00f"
+                },
+                {
+                    "colorName": "green",
+                    "hexValue" : "#0f0"
+                }]
+            }];
+            for(let num of numbers) {
+                console.log(num);
+                
+            }
+
+
         });
     </script>
 </body>
